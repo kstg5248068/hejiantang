@@ -1,0 +1,12 @@
+/**index.wxss**/
+
+.page-section {
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+.page-section-spacing {
+  box-sizing: border-box;
+  padding: 0 80rpx;
+  align-items: center;
+}
