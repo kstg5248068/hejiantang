@@ -4,12 +4,18 @@
           <swiper class="page-section page-section-spacing"
         indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" 
         interval="{{interval}}" duration="{{duration}} ">
-        <block wx:for="{{imgUrls}}" wx:key="*this" >
+        <block wx:for="{{imgUrls_h}}" wx:key="*this" >
           <swiper-item>
             <image src="{{item}}"/>
           </swiper-item>
         </block>
       </swiper>
-
-
+<!-- 嵌套的view -->
+<view wx:for="{{list}}" wx:key="{{item.id}}">
+{{item.name}}11111111111111111111
+<view id="{{item.id}}" wx:for="{{item.detail}}" wx:key="{{item.idd}}">
+<image id="{{item.idd}}" src="{{item.url}}" catchtap="click"></image>
+------------------
+</view>
+</view>
 </view>
