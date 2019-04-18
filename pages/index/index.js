@@ -84,10 +84,13 @@ Page({
       url: '../logs/logs'
     })
   },
-  click:function(e){
+  toDetail:function(e){
     var tag = e.target;
     //var id=tag.idd;
-    console.log(tag.id)
+    console.log(tag.id);
+    wx.navigateTo({
+      url: '../detail/detail',
+    })
   },
   onLoad: function() {}
 
